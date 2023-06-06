@@ -89,6 +89,7 @@
  *   old-style (with .h, e.g., <iostream.h>).
  *****************************************************************************/
 
+#define _USE_MATH_DEFINES
 #include <cstdio>
 #include <cstdlib>
 #include <string>
@@ -96,6 +97,8 @@
 #include <fstream>
 #include <sstream>
 #include <cassert>
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include <vector>
 #include <map>

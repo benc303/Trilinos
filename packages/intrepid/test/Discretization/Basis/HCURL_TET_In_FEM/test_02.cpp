@@ -46,6 +46,8 @@
     \author Created by P. Bochev, R. Kirby, D. Ridzal, K. Peterson.
 */
 
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Intrepid_HCURL_TET_In_FEM.hpp"
 #include "Intrepid_DefaultCubatureFactory.hpp"

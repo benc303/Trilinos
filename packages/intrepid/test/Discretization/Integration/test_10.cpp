@@ -48,6 +48,8 @@
 \author Created by P. Bochev and D. Ridzal.
 */
 
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_CubaturePolylib.hpp"
 #include "Intrepid_Utils.hpp"
 #include "Teuchos_oblackholestream.hpp"

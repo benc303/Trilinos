@@ -47,6 +47,8 @@
 */
 
 // Intrepid Includes
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Intrepid_HGRAD_LINE_Hermite_FEM.hpp"
 #include "Intrepid_DefaultCubatureFactory.hpp"

@@ -49,6 +49,8 @@
 */
 
 //#include "Intrepid_CubatureLineSorted.hpp"
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_CubatureLineSorted.hpp"
 #include "Intrepid_Utils.hpp"
 #include "Teuchos_oblackholestream.hpp"

@@ -45,6 +45,8 @@
     \brief  Unit tests for the Intrepid::HDIV_QUAD_I1_FEM class.
     \author Created by R. Kirby, P. Bochev, D. Ridzal, and K. Peterson.
 */
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Intrepid_HDIV_QUAD_In_FEM.hpp"
 #include "Intrepid_PointTools.hpp"

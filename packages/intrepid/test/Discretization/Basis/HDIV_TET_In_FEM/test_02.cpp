@@ -46,6 +46,8 @@
     \author Created by P. Bochev, R. Kirby, D. Ridzal, K. Peterson.
 */
 
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Intrepid_HGRAD_TET_Cn_FEM_ORTH.hpp"
 #include "Intrepid_HDIV_TET_In_FEM.hpp"

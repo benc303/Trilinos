@@ -47,6 +47,8 @@
 \author Created by R. Kirby
 */
 
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Teuchos_oblackholestream.hpp"
 #include "Teuchos_RCP.hpp"

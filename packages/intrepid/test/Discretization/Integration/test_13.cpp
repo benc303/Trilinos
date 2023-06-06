@@ -50,6 +50,8 @@
 
 #include "Intrepid_CubatureTensorSorted.hpp"
 //#include "Intrepid_CubatureLineSorted.hpp"
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_Utils.hpp"
 #include "Teuchos_oblackholestream.hpp"
 #include "Teuchos_RCP.hpp"

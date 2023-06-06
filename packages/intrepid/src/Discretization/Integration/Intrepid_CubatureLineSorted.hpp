@@ -50,6 +50,8 @@
 #define INTREPID_CUBATURE_LINESORTED_HPP
 
 #include "Intrepid_ConfigDefs.hpp"
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_Cubature.hpp"
 #include "Intrepid_BurkardtRules.hpp"
 #include "Teuchos_Assert.hpp"

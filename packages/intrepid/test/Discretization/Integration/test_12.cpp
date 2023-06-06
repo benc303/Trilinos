@@ -48,6 +48,8 @@
 \author Created by P. Bochev and D. Ridzal.
 */
 
+// Needed for Windows
+#define _USE_MATH_DEFINES
 //#include "Intrepid_CubatureTensorSorted.hpp"
 #include "Intrepid_CubatureTensorSorted.hpp"
 //#include "Intrepid_CubatureLineSorted.hpp"

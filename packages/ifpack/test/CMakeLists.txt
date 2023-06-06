@@ -10,7 +10,6 @@ ADD_SUBDIRECTORIES(
   IHSS-SORa
   IlukGraph
   OverlappingRowMatrix
-  Performance
   PreconditionerFactory
   Relaxation
   SetParameters
@@ -19,6 +18,11 @@ ADD_SUBDIRECTORIES(
   BlockCheby
   #UseTranspose
   )
+
+# Test using Linux-specific code
+IF (NOT WIN32)
+  ADD_SUBDIRECTORIES(Performance)
+ENDIF()
 
 IF (${PACKAGE_NAME}_ENABLE_SUPPORTGRAPH)
   ADD_SUBDIRECTORY(SupportGraph)

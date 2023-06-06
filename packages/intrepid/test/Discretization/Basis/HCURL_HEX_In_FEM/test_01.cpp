@@ -45,6 +45,8 @@
 \brief  Unit tests for the Intrepid::C_HEX_In_FEM class.
 \author Created by P. Bochev, D. Ridzal and K. Peterson.
 */
+// Needed for Windows
+#define _USE_MATH_DEFINES
 #include "Intrepid_FieldContainer.hpp"
 #include "Intrepid_HCURL_HEX_In_FEM.hpp"
 #include "Intrepid_PointTools.hpp"

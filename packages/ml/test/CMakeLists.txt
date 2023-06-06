@@ -7,12 +7,16 @@ ADD_SUBDIRECTORY(ML_Operator2Epetra_RowMatrix)
 ADD_SUBDIRECTORY(MultiLevelPreconditioner_Maxwell)
 ADD_SUBDIRECTORY(MultiLevelPreconditioner_NonSym)
 ADD_SUBDIRECTORY(MultiLevelPreconditioner_Restart)
-ADD_SUBDIRECTORY(MultiLevelPreconditioner_Sym)
 ADD_SUBDIRECTORY(MultiLevelPreconditioner_Sys)
 ADD_SUBDIRECTORY(SelfSmoother)
 ADD_SUBDIRECTORY(LevelWrap)
 ADD_SUBDIRECTORY(RefMaxwell)
 ADD_SUBDIRECTORY(GradDiv)
+
+# Test using Linux-specific code
+IF (NOT WIN32)
+  ADD_SUBDIRECTORY(MultiLevelPreconditioner_Sym)
+ENDIF()
 
 ASSERT_DEFINED(${PACKAGE_NAME}_ENABLE_Zoltan ${PACKAGE_NAME}_ENABLE_Galeri ${PACKAGE_NAME}_ENABLE_METIS)
 
